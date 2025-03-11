@@ -3,6 +3,7 @@ import employeeRouter from './Routers/employeeRouter.js';
 
 const app = express();
 const PORT = 4002;
+app.use(express.json());
 
 app.use("/api", employeeRouter);
 
